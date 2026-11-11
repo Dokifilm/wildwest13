@@ -1,0 +1,353 @@
+[
+  {
+    "place": "Disneyland · Galaxy’s Edge",
+    "question": "Milyen színű fénykardot készített Levi Disneylandben?",
+    "options": [
+      "Kék",
+      "Piros",
+      "Lila"
+    ],
+    "correct": 2,
+    "image": "kepek/02.webp",
+    "explanation": "Levi saját készítésű fénykardja lila volt.",
+    "memory": false
+  },
+  {
+    "place": "Universal Studios Hollywood",
+    "question": "Hányszor látogattuk meg Zsuzsival a Universal Studios Hollywoodot?",
+    "options": [
+      "2 alkalommal",
+      "3 alkalommal",
+      "6 alkalommal"
+    ],
+    "correct": 2,
+    "image": "kepek/06.webp",
+    "explanation": "A személyes történetünk szerint hat alkalommal.",
+    "memory": false
+  },
+  {
+    "place": "Warner Bros. Studio",
+    "question": "Melyik évben kapta Doki azt a Batman-cukortartót, amelyből gyerekként naponta csak egy cukrot ehetett meg?",
+    "options": [
+      "1989-ben",
+      "2001-ben",
+      "2010-ben"
+    ],
+    "correct": 0,
+    "image": "kepek/09.webp",
+    "explanation": "A véglegesített évszám: 1989.",
+    "memory": false
+  },
+  {
+    "place": "Santa Monica Pier",
+    "question": "Mit nyert Levi a Santa Monica mólón?",
+    "options": [
+      "Egy óriási plüsscápát",
+      "Egy ananászmaci plüssfigurát",
+      "Egy plüssgatyát"
+    ],
+    "correct": 1,
+    "image": "kepek/15.webp",
+    "explanation": "A nyeremény egy ananászmaci volt.",
+    "memory": false
+  },
+  {
+    "place": "Death Valley",
+    "question": "Hogy hívják azt a híres kilátópontot, ahol a hullámzó, színes sziklaformációkat csodáltuk meg?",
+    "options": [
+      "Zabriskie Point",
+      "Horseshoe Bend",
+      "Grandview Point"
+    ],
+    "correct": 0,
+    "image": "kepek/21.webp",
+    "explanation": "A Death Valley egyik legismertebb kilátópontja.",
+    "memory": false
+  },
+  {
+    "place": "Alien Fresh Jerky · Baker",
+    "question": "Melyik különleges, UFO-tematikájú üzletben álltunk meg a sivatagban?",
+    "options": [
+      "UFO Burger",
+      "Alien Fresh Jerky",
+      "Area 51 Candy Shop"
+    ],
+    "correct": 1,
+    "image": "kepek/16.webp",
+    "explanation": "Az útközbeni megálló az Alien Fresh Jerky volt.",
+    "memory": false
+  },
+  {
+    "place": "Alien Fresh Jerky · Baker",
+    "question": "Mi az a jerky?",
+    "options": [
+      "Szárított, fűszerezett hús",
+      "Különleges amerikai édesség",
+      "Energiaital"
+    ],
+    "correct": 0,
+    "image": "kepek/16.webp",
+    "explanation": "A jerky szárított, gyakran fűszerezett hús.",
+    "memory": false
+  },
+  {
+    "place": "Las Vegas · Fremont Street",
+    "question": "Mi a híres, hatalmas LED-mennyezettel fedett utca neve?",
+    "options": [
+      "Hollywood Boulevard",
+      "Fremont Street",
+      "Sunset Boulevard"
+    ],
+    "correct": 1,
+    "image": "kepek/19.webp",
+    "explanation": "A Fremont Street az óriási fényjátékáról ismert.",
+    "memory": false
+  },
+  {
+    "place": "Las Vegas · Fremont Street",
+    "question": "Mit lehetett pénzért vásárolni a Fremont Streeten?",
+    "options": [
+      "Egy autót",
+      "Egy füldugót",
+      "Egy elfenekelést"
+    ],
+    "correct": 2,
+    "image": "kepek/19.webp",
+    "explanation": "A legviccesebb utcai ajánlat egy elfenekelés volt.",
+    "memory": false
+  },
+  {
+    "place": "Las Vegas · Welcome sign",
+    "question": "Melyik korábbi évben készítettünk már fotót a híres Las Vegas-táblánál?",
+    "options": [
+      "2016-ban",
+      "2018-ban",
+      "2022-ben"
+    ],
+    "correct": 1,
+    "image": "kepek/20.webp",
+    "explanation": "A korábbi közös fotó 2018-ban készült.",
+    "memory": false
+  },
+  {
+    "place": "AREA15 · Omega Mart",
+    "question": "Melyik különleges termékkel NEM találkoztunk az Omega Mart polcain?",
+    "options": [
+      "Tetovált csirke",
+      "Bálnadal dezodor",
+      "Marsi krokodiltej"
+    ],
+    "correct": 2,
+    "image": "kepek/24.webp",
+    "explanation": "A marsi krokodiltej a kitalált válasz.",
+    "memory": false
+  },
+  {
+    "place": "Zion · Angels Landing",
+    "question": "Mekkora bírságot kaphattunk volna a mókusok etetéséért az Angels Landing túrán?",
+    "options": [
+      "10 dollárt",
+      "20 dollárt",
+      "100 dollárt"
+    ],
+    "correct": 2,
+    "image": "kepek/22.webp",
+    "explanation": "A túrán a vadállatok etetése tilos.",
+    "memory": false
+  },
+  {
+    "place": "Zion · Springdale",
+    "question": "Melyik madarat láttuk a Zionban, amelynek akár három méter is lehet a szárnyfesztávolsága?",
+    "options": [
+      "Fehérfejű rétisas",
+      "Kaliforniai kondor",
+      "Vándorsólyom"
+    ],
+    "correct": 1,
+    "image": "kepek/23.webp",
+    "explanation": "A kaliforniai kondor rendkívül nagy szárnyfesztávolságú madár.",
+    "memory": false
+  },
+  {
+    "place": "Bryce Canyon",
+    "question": "Miről álmodtunk a Zion meredek túrája után?",
+    "options": [
+      "Hogy eltévedünk a sivatagban",
+      "Hogy lezuhanunk a szakadékba",
+      "Hogy medvék üldöznek bennünket"
+    ],
+    "correct": 1,
+    "image": "kepek/27.webp",
+    "explanation": "A meredek szakadék emléke még álmunkban is visszatért.",
+    "memory": false
+  },
+  {
+    "place": "Horseshoe Bend",
+    "question": "Miért került fel a Horseshoe Bend Zsuzsi bakancslistájára?",
+    "options": [
+      "Mert a barátai meséltek róla",
+      "Mert látott róla egy gyönyörű filmet",
+      "Mert sokáig nézte a poszterét az osztálytermében"
+    ],
+    "correct": 2,
+    "image": "kepek/25.webp",
+    "explanation": "Zsuzsi sokáig nézte az osztálytermi posztert.",
+    "memory": false
+  },
+  {
+    "place": "Antelope Canyon · Képfelismerés",
+    "question": "Melyik különleges természeti helyszínen készült ez a fénykép?",
+    "options": [
+      "Bryce Canyon",
+      "Antelope Canyon",
+      "Grand Canyon"
+    ],
+    "correct": 1,
+    "image": "kepek/26.webp",
+    "explanation": "A hullámzó homokkőfalak az Antelope Canyonra jellemzők.",
+    "memory": false
+  },
+  {
+    "place": "Lower Antelope Canyon",
+    "question": "Mennyivel az utazás előtt foglaltuk le az Antelope Canyon látogatását?",
+    "options": [
+      "Egy héttel",
+      "Egy hónappal",
+      "Egy évvel"
+    ],
+    "correct": 2,
+    "image": "kepek/30.webp",
+    "explanation": "A látogatást már egy évvel korábban lefoglaltuk.",
+    "memory": false
+  },
+  {
+    "place": "Utah · Képmemória",
+    "question": "Mi szerepelt a Welcome to Utah családi fotó bal oldalán?",
+    "options": [
+      "Egy 163-as útjelző tábla",
+      "Egy benzinkút",
+      "Egy parkolóóra"
+    ],
+    "correct": 0,
+    "image": "kepek/28.webp",
+    "explanation": "A 163-as országút táblája volt ott. A webes játék ezt memóriafeladatként mutatja.",
+    "memory": true
+  },
+  {
+    "place": "Monument Valley",
+    "question": "Melyik híres film egyik jelenete játszódott azon az országúton, ahol közös fotót készítettünk?",
+    "options": [
+      "Vissza a jövőbe",
+      "Forrest Gump",
+      "Jurassic Park"
+    ],
+    "correct": 1,
+    "image": "kepek/29.webp",
+    "explanation": "A Monument Valley felé vezető út a Forrest Gumpból is ismerős.",
+    "memory": false
+  },
+  {
+    "place": "Monument Valley · Képmemória",
+    "question": "Mi a Monument Valley országúti családi fotójának jellegzetes háttéreleme?",
+    "options": [
+      "Egy világítótorony",
+      "Egy hófödte hegy",
+      "Egy hatalmas sziklatorony"
+    ],
+    "correct": 2,
+    "image": "kepek/29.webp",
+    "explanation": "Az eredeti képen monumentális sziklatornyok láthatók. A webes játék memória-változatot használ.",
+    "memory": true
+  },
+  {
+    "place": "Grand Canyon",
+    "question": "Mekkora kort ölelnek fel a Grand Canyon látható kőzetrétegei?",
+    "options": [
+      "20 millió év",
+      "200 millió év",
+      "Közel 2 milliárd év"
+    ],
+    "correct": 2,
+    "image": "kepek/31.webp",
+    "explanation": "A feltáruló rétegek rendkívül hosszú földtörténeti időszakot mutatnak.",
+    "memory": false
+  },
+  {
+    "place": "Grand Canyon · Különleges összehasonlítás",
+    "question": "Ha a Grand Canyon kialakulása során eltávolított becsült kőzetmennyiséget Budapest egész területén szétterítenénk, meddig érne?",
+    "options": [
+      "Egy 15 emeletes ház magasságáig",
+      "A MOL Campus torony magasságáig",
+      "Majdnem a Mount Everest csúcsáig"
+    ],
+    "correct": 2,
+    "image": "kepek/32.webp",
+    "explanation": "Nagyságrendi becslés: a kanyon térfogatát Budapest területére vetítve több kilométeres réteget kapnánk.",
+    "memory": false
+  },
+  {
+    "place": "Sedona · Képfelismerés",
+    "question": "Melyik fotón ülünk mindhárman a vörös sziklán?",
+    "options": [
+      "Bal felső",
+      "Jobb felső",
+      "Jobb alsó"
+    ],
+    "correct": 2,
+    "image": "kepek/35.webp",
+    "explanation": "A megfelelő fotó az eredeti oldalpár jobb alsó részén látható.",
+    "memory": false
+  },
+  {
+    "place": "Sedona · Naplemente",
+    "question": "Mi teszi különösen látványossá Sedona híres naplementéit?",
+    "options": [
+      "A sziklák izzó vörös színben ragyognak",
+      "A hegycsúcsokat egész évben hó borítja",
+      "A gyönyörű fenyőerdőiről ismert"
+    ],
+    "correct": 0,
+    "image": "kepek/33.webp",
+    "explanation": "A naplemente fénye izzó vörösre festi a sziklákat.",
+    "memory": false
+  },
+  {
+    "place": "Phoenix · Búcsú",
+    "question": "Mi volt a legfontosabb, amit Dokinak mindenképp le kellett fotóznia Phoenixben?",
+    "options": [
+      "A család",
+      "A gyönyörű phoenixi naplemente",
+      "Kaktusz"
+    ],
+    "correct": 2,
+    "image": "kepek/34.webp",
+    "explanation": "A véglegesített személyes válasz: a kaktusz.",
+    "memory": false
+  },
+  {
+    "place": "Amerikai ízek",
+    "question": "Melyik helyen NEM ettünk hamburgert az út során?",
+    "options": [
+      "Raising Cane’s",
+      "Krusty Burger",
+      "Five Guys"
+    ],
+    "correct": 0,
+    "image": "kepek/37.webp",
+    "explanation": "A Raising Cane’s-ban csirkét ettünk.",
+    "memory": false
+  },
+  {
+    "place": "KönyvVilág EXTRA · Finálé",
+    "question": "Melyik évben jelent meg a fotókönyvsorozat első kötete?",
+    "options": [
+      "2016-ban",
+      "2018-ban",
+      "2020-ban"
+    ],
+    "correct": 1,
+    "image": "kepek/36.webp",
+    "explanation": "A sorozat első kötete 2018-ban jelent meg.",
+    "memory": false
+  }
+]

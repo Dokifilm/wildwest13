@@ -1,0 +1,12 @@
+13 nap a vadnyugaton – új, egyeztetett változat
+
+1. FOTÓKÖNYV: 40 oldalpár eredeti, javított sorrendje megőrizve; a képeken nincs változás.
+2. FŐOLDAL: kizárólag az eredeti ELSŐ BORÍTÓ, hátlap és gerinc nélkül.
+3. ÚTITERV: a teljes 13 nap eredeti, változatlan szövege és alternatív tervei, csak a repülőjegy foglalási azonosítójának sora nélkül. Az úti képek, térképlinkek és ismertetők elkülönítve.
+4. ZENE: új, eredeti akusztikusgitár-hangszínekkel feljátszott instrumentális country kíséret, külön hangerővel és gombbal, a menüpontok között folyamatosan. Video indításakor szünetel. Ez gitárhangmintákból szerkesztett zenei prototípus, nem élő felvétel és nem a YouTube-referencia másolata.
+5. VIDEÓK: önálló negyedik menüpont; 16 VR360, 19 hagyományos videó; YouTube beágyazott lejátszó és külső YouTube-link. Az előnézeti képekhez internet kell, szükség esetén könyvoldal jelenik meg.
+
+Indítás: csomagold ki a ZIP-et, majd ebben a mappában kattints duplán az index.html fájlra. Az internet szükséges a YouTube-videókhoz és az online térképlinkekhez.
+
+2026-11-10 – Zene frissítés: A korábbi szintetikus próbafelvétel helyére a felhasználó által feltöltött, 5 perc 27,6 másodperces Thirteen Days in the Wild West című MP3 került.
+A négy menüpont, fotókönyv, útiterv és videók változatlanok.

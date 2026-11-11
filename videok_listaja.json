@@ -1,0 +1,247 @@
+[
+  {
+    "cat": "vr",
+    "id": "HR2KOe4cCgc",
+    "title": "Millennium Falcon · VR 360°",
+    "desc": "Star Wars-hangulat a Millennium Falcon világában. A 360°-os nézetben magad fedezheted fel a teret.",
+    "fallback": "kepek/02.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "xkXtKkAGR6Q",
+    "title": "Universal Studios · Doughnut · VR 360°",
+    "desc": "Egy különleges, fánkos pillanat a Universal Studios környékén, körbenézhető felvételen.",
+    "fallback": "kepek/04.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "EXWDjyxhwbE",
+    "title": "Harry Potter · VR 360°",
+    "desc": "Varázslatos filmes környezet a Harry Potter világából, 360°-ban.",
+    "fallback": "kepek/07.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "Onmt-BMG4bQ",
+    "title": "Death Valley · VR 360°",
+    "desc": "A Death Valley sivatagi tájai körbenézhető panorámában.",
+    "fallback": "kepek/17.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "i5idVhdvPzM",
+    "title": "Las Vegas · VR 360°",
+    "desc": "Las Vegas fényei és különleges hangulata 360°-os felvételen.",
+    "fallback": "kepek/20.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "KIy46lUWjY8",
+    "title": "Zion · autózás · VR 360°",
+    "desc": "Autózás a Zion lenyűgöző sziklái között, 360°-os nézőponttal.",
+    "fallback": "kepek/23.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "A4_5D9gtM-k",
+    "title": "Zion National Park · VR 360°",
+    "desc": "Utazás a Zion kanyonjának sziklafalai közé, körbenézhető videóval.",
+    "fallback": "kepek/22.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "NsKG2SbOt0w",
+    "title": "Scout Lookout · VR 360°",
+    "desc": "A Zion egyik híres túracélpontjának panorámája 360°-ban.",
+    "fallback": "kepek/22.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "wKbq50hyXLU",
+    "title": "Bryce Canyon · Thor’s Hammer · VR 360°",
+    "desc": "A Bryce Canyon híres sziklaalakzata és környezete körbenézhető felvételen.",
+    "fallback": "kepek/27.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "fLLga2SnKUo",
+    "title": "Horseshoe Bend I. · VR 360°",
+    "desc": "A Colorado folyó patkó alakú kanyarulata – első 360°-os nézet.",
+    "fallback": "kepek/25.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "tTKr1IGpErs",
+    "title": "Horseshoe Bend II. · VR 360°",
+    "desc": "Második körbenézhető felvétel a Horseshoe Bend kilátópontjáról.",
+    "fallback": "kepek/25.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "-FOOxNNu7RA",
+    "title": "Monument Valley · VR 360°",
+    "desc": "A Monument Valley ikonikus sziklatornyai és a sivatagi panoráma.",
+    "fallback": "kepek/29.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "bIE6UVO1LZg",
+    "title": "Grand Canyon · VR 360°",
+    "desc": "A Grand Canyon hatalmas szakadékvilágának körbenézhető látványa.",
+    "fallback": "kepek/32.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "BREv7lyaZ28",
+    "title": "Sedona · Bell Rock · VR 360°",
+    "desc": "Körbenézhető nézőpont a Sedona közelében magasodó Bell Rocknál.",
+    "fallback": "kepek/33.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "_SgZJNfwV_c",
+    "title": "Sedona · Fay Canyon séta · VR 360°",
+    "desc": "Közös séta Sedona vörös sziklái között, 360°-os felvételen.",
+    "fallback": "kepek/35.webp"
+  },
+  {
+    "cat": "vr",
+    "id": "wktuwh0yZc0",
+    "title": "Sedona · Fay Canyon · VR 360°",
+    "desc": "A Fay Canyon tája és különleges sziklái, körbenézhető videóban.",
+    "fallback": "kepek/35.webp"
+  },
+  {
+    "cat": "film",
+    "id": "wrlWIJPLe0I",
+    "title": "Repülőút Amerikába",
+    "desc": "Az amerikai utazás kezdete a levegőben, úton Los Angeles felé.",
+    "fallback": "kepek/00.webp"
+  },
+  {
+    "cat": "film",
+    "id": "1JueuitDeCM",
+    "title": "Star Wars · Galaxy’s Edge",
+    "desc": "Star Wars-élmények és a Disneyland különleges filmes világa.",
+    "fallback": "kepek/02.webp"
+  },
+  {
+    "cat": "film",
+    "id": "pMViCiLBMho",
+    "title": "Disneyland",
+    "desc": "A Disneylandben átélt pillanatok és látványosságok.",
+    "fallback": "kepek/03.webp"
+  },
+  {
+    "cat": "film",
+    "id": "giHP2LtlutM",
+    "title": "Handbuilt Lightsabers · Disneyland",
+    "desc": "Fénykardkészítés a Savi’s Workshopban, a Star Wars világában.",
+    "fallback": "kepek/05.webp"
+  },
+  {
+    "cat": "film",
+    "id": "LhqcM8KMoNY",
+    "title": "Universal Studios Hollywood",
+    "desc": "Filmes attrakciók és stúdióélmények Hollywoodban.",
+    "fallback": "kepek/04.webp"
+  },
+  {
+    "cat": "film",
+    "id": "qHbXRWydO-Q",
+    "title": "Harry Potter",
+    "desc": "A varázslóvilág filmes hangulata és látványos helyszínei.",
+    "fallback": "kepek/07.webp"
+  },
+  {
+    "cat": "film",
+    "id": "I0TFiO12k-E",
+    "title": "Desperate Housewives",
+    "desc": "A filmsorozathoz kapcsolódó híres díszletek a stúdiólátogatás során.",
+    "fallback": "kepek/10.webp"
+  },
+  {
+    "cat": "film",
+    "id": "ptl_6c1NHfo",
+    "title": "Stars Hollow · Gilmore Girls",
+    "desc": "A Szívek szállodája ismerős kisvárosa a Warner Bros. stúdióban.",
+    "fallback": "kepek/13.webp"
+  },
+  {
+    "cat": "film",
+    "id": "Y0py-zaGL9U",
+    "title": "Agymenők · The Big Bang Theory",
+    "desc": "Látogatás a népszerű sorozathoz kapcsolódó stúdióhelyszíneken.",
+    "fallback": "kepek/08.webp"
+  },
+  {
+    "cat": "film",
+    "id": "RJBHD5amLNU",
+    "title": "Santa Monica Pier",
+    "desc": "A Csendes-óceán partja és a Santa Monica móló.",
+    "fallback": "kepek/15.webp"
+  },
+  {
+    "cat": "film",
+    "id": "-N7m9wuIsCM",
+    "title": "Death Valley",
+    "desc": "Kalandozás a Death Valley különleges sivatagi vidékén.",
+    "fallback": "kepek/17.webp"
+  },
+  {
+    "cat": "film",
+    "id": "dUKrP9wm-dE",
+    "title": "Las Vegas",
+    "desc": "A kaszinóváros fényei, utcái és emlékezetes pillanatai.",
+    "fallback": "kepek/20.webp"
+  },
+  {
+    "cat": "film",
+    "id": "a8aLms1FTMg",
+    "title": "AREA15 · Omega Mart",
+    "desc": "A Las Vegas-i AREA15 különös, szürreális látványvilága.",
+    "fallback": "kepek/24.webp"
+  },
+  {
+    "cat": "film",
+    "id": "8Y688TpJKqY",
+    "title": "Kaliforniai kondor · Zion",
+    "desc": "A hatalmas szárnyfesztávolságú madár a Zion környékén.",
+    "fallback": "kepek/23.webp"
+  },
+  {
+    "cat": "film",
+    "id": "Aryo1U4R2us",
+    "title": "Antelope Canyon",
+    "desc": "Fények és hullámzó homokkőformák az Antelope Canyonban.",
+    "fallback": "kepek/30.webp"
+  },
+  {
+    "cat": "film",
+    "id": "2E1yQMT42-8",
+    "title": "Monument Valley",
+    "desc": "Sziklatornyok, sivatagi utak és vadnyugati tájak.",
+    "fallback": "kepek/29.webp"
+  },
+  {
+    "cat": "film",
+    "id": "VjB4ORSpULo",
+    "title": "Grand Canyon",
+    "desc": "Az óriási kanyon panorámái és a South Rim látványosságai.",
+    "fallback": "kepek/32.webp"
+  },
+  {
+    "cat": "film",
+    "id": "Zv76-CagrRA",
+    "title": "Sedona",
+    "desc": "A vörös sziklák városának panorámái, túrák és naplementék.",
+    "fallback": "kepek/33.webp"
+  },
+  {
+    "cat": "film",
+    "id": "fSLoqFDZupc",
+    "title": "Repülés haza",
+    "desc": "A harmadik amerikai út búcsúja és a hazafelé vezető repülőút.",
+    "fallback": "kepek/34.webp"
+  }
+]

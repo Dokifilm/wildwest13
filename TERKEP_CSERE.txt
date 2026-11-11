@@ -1,0 +1,5 @@
+A Los Angeles-i játéktérkép a legutóbb kiválasztott, jóváhagyott változatra lett cserélve.
+Útvonal: 1. LAX Airport → 2. Pasadena → 3. Disneyland → 4. Universal Studios Hollywood → 5. Santa Monica.
+A játék további részei, a négyállamos térkép, a fotókönyv, a zene, a videók és az útiterv változatlanok.
+A képfájl: los-angeles-terkep.png.
+A weboldal helyi megnyitása: index.html.

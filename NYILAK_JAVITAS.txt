@@ -1,0 +1,4 @@
+MacBook nyílbillentyűzetes lapozás javítva.
+Fotókönyv nézetben: balra (←) előző oldalpár; jobbra (→) következő oldalpár.
+A nyílbillentyűk nem lapoznak, ha szövegmező/hangerőszabályzó aktív vagy a nagyítás meg van nyitva.
+Minden más fájl a saját dallal készült előző változatból változatlanul átmásolva.
