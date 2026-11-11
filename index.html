@@ -109,24 +109,38 @@ function turnBook(d){
 function zoomBook(){$('zoomImg').src=BOOK_IMAGES[bookIndex];$('zoom').classList.add('open')}
 function closeZoom(){$('zoom').classList.remove('open')}
 $('spread').addEventListener('click',zoomBook);
-// Desktop/MacBook keyboard navigation: intercept arrow keys before browsers can scroll.
-// Keep modifier shortcuts and slider/text editing untouched.
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){
+// MacBook keyboard: handle both keydown and keyup, including older Safari key codes.
+// This only applies to the photobook; it does not affect other page features.
+const heldBookArrowKeys=new Set();
+function bookArrowDirection(e){
+  if(e.key==='ArrowRight'||e.key==='Right'||e.code==='ArrowRight'||e.which===39||e.keyCode===39)return 1;
+  if(e.key==='ArrowLeft'||e.key==='Left'||e.code==='ArrowLeft'||e.which===37||e.keyCode===37)return -1;
+  return 0;
+}
+function handleBookArrow(e){
+  if(e.key==='Escape'&&e.type==='keydown'){
     closeZoom();
     if($('videoOverlay').classList.contains('open'))closeVideo();
     return;
   }
-  if(!$('book').classList.contains('active') || $('zoom').classList.contains('open'))return;
-  if(e.altKey || e.ctrlKey || e.metaKey)return;
+  const direction=bookArrowDirection(e);
+  if(!direction || !$('book').classList.contains('active') || $('zoom').classList.contains('open') || $('videoOverlay').classList.contains('open'))return;
+  if(e.metaKey||e.ctrlKey||e.altKey)return;
   const target=e.target;
-  if(target && (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)))return;
-  const direction=(e.key==='ArrowRight'||e.code==='ArrowRight'||e.key==='Right')?1:
-                 (e.key==='ArrowLeft'||e.code==='ArrowLeft'||e.key==='Left')?-1:0;
-  if(!direction)return;
+  if(target instanceof Element && (target.isContentEditable||target.closest('input,textarea,select,[contenteditable],[role="textbox"]')))return;
   e.preventDefault();
-  if(!e.repeat)turnBook(direction);
-},true);
+  if(e.type==='keydown'){
+    if(!heldBookArrowKeys.has(direction))turnBook(direction);
+    heldBookArrowKeys.add(direction);
+  }else if(e.type==='keyup'){
+    // Safari fallback: some configurations may omit a page-level keydown.
+    if(!heldBookArrowKeys.has(direction))turnBook(direction);
+    heldBookArrowKeys.delete(direction);
+  }
+}
+window.addEventListener('keydown',handleBookArrow,true);
+window.addEventListener('keyup',handleBookArrow,true);
+window.addEventListener('blur',()=>heldBookArrowKeys.clear());
 renderBook();
 const STOPS=['Los Angeles International Airport','Best Western Pasadena Royale Inn & Suites','Disneyland','Universal Studios Hollywood','Santa Monica Pier','Death Valley','Las Vegas','Zion National Park','Bryce Canyon','Antelope Canyon','Grand Canyon','Sedona','Phoenix Sky Harbor Airport'];
 const LA_COORD=[[110,390],[350,165],[660,295],[500,80],[110,475]];const WEST_COORD=[[110,370],[250,245],[405,112],[550,165],[670,290],[790,420],[875,465],[940,525]];
