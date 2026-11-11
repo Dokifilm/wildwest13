@@ -1,0 +1,345 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dalunk – Thirteen Days in the Wild West</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+:root{--cream:#f3e4c6;--paper:#dfc99f;--ink:#33241c;--red:#893b30;--gold:#d9a86c;--light:#fff5dd}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--cream);background:#1b1714;font:16px/1.65 'DM Sans',system-ui,sans-serif;background-image:radial-gradient(ellipse at top,#433124 0,#171513 75%)}a{color:#f2c994}button{cursor:pointer}header{position:sticky;top:0;z-index:30;background:#211a17ed;border-bottom:1px solid #74563b;backdrop-filter:blur(8px)}.nav{max-width:1140px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;gap:15px}.brand{font-family:'Playfair Display',serif;color:#f6d6a5;font-size:18px;font-weight:bold}.pill{border:1px solid #8b6345;border-radius:4px;padding:5px 11px;font-size:12px;color:#ecc69b}.container{max-width:1100px;margin:auto;padding:24px 20px 80px}.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:12px;color:#d6ae7c;font-weight:bold;text-align:center;margin-top:16px}.main-title{font:700 clamp(30px,4.4vw,55px)/1.1 'Playfair Display',serif;text-align:center;color:#ffe4b8;margin:10px auto 8px}.subtitle{text-align:center;color:#dcc19d;margin:0 auto 28px}.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:stretch}.cover{width:100%;height:100%;max-height:445px;object-fit:contain;background:#111;border:7px solid #78573c;box-shadow:0 10px 30px #0008;display:block}.player{background:linear-gradient(145deg,#4b3528,#282019);border:1px solid #927047;box-shadow:0 8px 36px #0005;padding:27px;border-radius:4px;display:flex;flex-direction:column;justify-content:center;gap:17px}.player h2{font:600 26px 'Playfair Display',serif;margin:0;color:#ffddaf}.player small{color:#c7a987;letter-spacing:.08em}.controls{display:flex;justify-content:center;align-items:center;gap:18px}.ctrl{border:0;background:transparent;color:#f3d6ac;font-size:25px;width:46px;height:46px;border-radius:50%}.ctrl:focus-visible,.range:focus-visible{outline:2px solid #eebf8f}.play{background:#a44b3e;color:#fff7e2;font-size:24px;width:66px;height:66px;box-shadow:0 4px 16px #0005}.time{display:flex;justify-content:space-between;color:#d6b58e;font-size:13px}.range{width:100%;accent-color:#c77559;cursor:pointer}.vol{display:flex;align-items:center;gap:12px;color:#d7ba94;font-size:14px}.vol input{flex:1}.hint{font-size:13px;color:#c5aa89}.section{margin-top:50px}.sectiontitle{font:600 clamp(27px,4vw,38px) 'Playfair Display',serif;color:#ffe2b4;margin:0 0 8px}.desc{color:#d3b998;margin:0 0 20px}.video{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center}.yt{aspect-ratio:16/9;border:1px solid #8b6345;background:#121212;border-radius:3px;overflow:hidden}.yt iframe{width:100%;height:100%;border:0}.video-note{background:#382921;padding:22px;border-left:3px solid #aa6044}.video-note h3{font:600 22px 'Playfair Display',serif;margin:0 0 10px}.linkbtn{display:inline-block;padding:9px 14px;background:#7a362d;color:#ffe9c8;text-decoration:none;border-radius:3px;margin-top:8px;font-weight:600}.paper{background:linear-gradient(120deg,#e7d3a8,#f1e3c4 48%,#dfc59a);color:#302018;border:9px solid #866442;outline:1px solid #ccb083;padding:28px clamp(16px,4vw,45px);box-shadow:0 9px 32px #0008}.lyric-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:24px;flex-wrap:wrap}.lyric-head h2{font:700 32px 'Playfair Display',serif;margin:0;color:#4f2b20}.toggle{display:flex;gap:6px;flex-wrap:wrap}.toggle button{background:#f5e3c4;color:#694632;border:1px solid #b99c73;padding:7px 13px;border-radius:3px}.toggle button.active{background:#833a30;color:#fff4db}.columns{display:grid;grid-template-columns:1fr 1fr;gap:32px}.columns>div+div{border-left:1px solid #b99e75;padding-left:32px}.lyrics{white-space:pre-line;line-height:1.85;font-size:15px}.langtitle{font:700 22px 'Playfair Display',serif;color:#8d392d;margin:0 0 14px}.columns.english,.columns.hungarian{grid-template-columns:1fr}.columns.english #hu,.columns.hungarian #en{display:none}.columns.english #en,.columns.hungarian #hu{border:0;padding:0}.endnote{text-align:center;margin:36px 0 2px;font-family:'Playfair Display',serif;font-size:21px;font-style:italic;color:#8b382e}.foot{text-align:center;color:#b8a083;font-size:13px;margin-top:28px}@media(max-width:800px){.hero,.video{grid-template-columns:1fr}.cover{max-height:unset}.columns{grid-template-columns:1fr;gap:20px}.columns>div+div{border-left:0;border-top:1px solid #b99e75;padding:22px 0 0}.player{min-height:300px}.container{padding-left:13px;padding-right:13px}.paper{padding:20px}}
+
+/* Karaoke – a separate preview feature: original layout and lyrics stay unchanged. */
+.karaoke{margin-top:50px;background:radial-gradient(ellipse at 45% 0,#5b3e2c 0,#2a211b 55%,#181411 100%);border:1px solid #916a47;border-radius:6px;padding:clamp(18px,3.5vw,42px);box-shadow:0 12px 44px #0008;position:relative;overflow:hidden}
+.karaoke:before{content:"♪";position:absolute;right:28px;top:4px;color:#e4b97e18;font-size:150px;line-height:1;pointer-events:none}
+.karaoke-top{display:flex;align-items:start;justify-content:space-between;gap:14px;flex-wrap:wrap}.karaoke-top h2{font:700 clamp(24px,4vw,38px)/1.2 'Playfair Display',serif;margin:3px 0 4px;color:#f6d4a1}.karaoke-sub{color:#cdb394;font-size:14px;margin:0 0 18px}
+.karaoke-viewport{height:490px;max-height:68vh;overflow:auto;scrollbar-width:thin;scrollbar-color:#9b7452 #32251c;position:relative;overscroll-behavior:contain;border-top:1px solid #75503680;border-bottom:1px solid #75503680;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent);}
+.karaoke-stack{position:relative;padding:190px 12px 210px}.karaoke-line{border:0;background:none;width:100%;display:block;text-align:center;color:#a9937d;font-family:'Playfair Display',serif;font-size:clamp(15px,1.7vw,21px);line-height:1.4;padding:6px 4px;opacity:.48;transform:scale(.94);transition:color .28s,opacity .28s,transform .28s,text-shadow .28s;cursor:pointer}
+.karaoke-line.active{color:#ffda94;font-weight:700;opacity:1;transform:scale(1);text-shadow:0 0 22px #dba55b55}.karaoke-line.near{opacity:.76;color:#dac4a5}.karaoke-line:hover{opacity:1}
+.karaoke-actions{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:17px}.karaoke-actions button{background:#553a2b;border:1px solid #a87b53;color:#ffe3b8;padding:9px 12px;border-radius:4px;font-size:14px}.karaoke-actions button:hover{background:#754735}.karaoke-actions .k-play{background:#974538;font-weight:700}.sync-value{font-size:13px;color:#d6ba98;min-width:88px;text-align:center}.karaoke-notice{font-size:12px;color:#bda487;text-align:center;margin:15px 0 0}.karaoke-headline{font:700 13px 'DM Sans',sans-serif;letter-spacing:.15em;color:#d8aa75;text-transform:uppercase}.karaoke-status{font-size:13px;color:#e5c392}
+@media(max-width:550px){.karaoke-viewport{height:430px;max-height:62vh}.karaoke-stack{padding:155px 5px 175px}.karaoke-line{padding:7px 1px}}
+.karaoke-language{display:flex;flex-direction:column;align-items:flex-end;gap:11px}.karaoke-switch{display:flex;gap:4px;background:#211812;padding:5px;border-radius:7px;border:1px solid #886344}.karaoke-switch button{background:transparent;border:0;border-radius:5px;color:#cdb89e;padding:10px 15px;font:600 14px 'DM Sans',sans-serif;cursor:pointer}.karaoke-switch button.selected{background:#a96737;color:#fff4de;box-shadow:0 2px 8px #0005}.karaoke-switch button:focus-visible{outline:2px solid #ffd79a;outline-offset:2px}@media(max-width:550px){.karaoke-language{align-items:flex-start}}
+
+/* Precízebb, egyedi időbélyeges szinkron és több soros nézet */
+.karaoke-viewport{mask-image:linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent)}
+.karaoke-line{transition:color .15s,opacity .15s,text-shadow .15s;scroll-margin-block:190px}
+.karaoke-line.near{opacity:.81;color:#e2c6a5}
+.karaoke-line.active{outline:1px solid #edc27a40;background:#fff0be0b;border-radius:5px}
+.karaoke-line.manual-selected{box-shadow:inset 3px 0 #c18b54;background:#c1914218;opacity:1}
+.karaoke-calibrate{margin-top:16px;padding:14px 16px;background:#120e0bb8;border:1px solid #7f5d41;border-radius:6px;color:#e0c4a3}
+.karaoke-calibrate p{font-size:13px;line-height:1.55;margin:6px 0 10px}
+.karaoke-calibrate .adjust-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:10px}
+.karaoke-calibrate button{background:#493122;border:1px solid #967149;color:#f4d8b2;border-radius:4px;padding:8px 12px}
+.karaoke-calibrate button:disabled{opacity:.4;cursor:not-allowed}
+.karaoke-calibrate .save-sync{background:#8d4b34;font-weight:700;color:#fff4dd}
+.karaoke-calibrate strong{color:#f6d5a3}
+.karaoke-info{font-size:13px;color:#d9bb91;margin:8px 0 0;text-align:center}
+
+html.embedded header{display:none}
+html.embedded main.container{max-width:1180px;padding-top:18px;padding-bottom:36px}
+html.embedded body{background:#211913}
+
+/* Az eredeti dal letöltése – a lejátszó többi része változatlan. */
+.download-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:1px}
+.download-audio{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid #dba96c;border-radius:5px;background:#8f4534;color:#fff2da;text-decoration:none;font-weight:700;line-height:1.25;box-shadow:0 3px 12px #0005;transition:background .2s ease,transform .2s ease}
+.download-audio:hover{background:#ac5b42;transform:translateY(-1px)}
+.download-audio:focus-visible{outline:3px solid #ffe2a9;outline-offset:3px}
+.download-hint{font-size:12px;color:#cbb08d;text-align:center}
+</style></head><body><header><div class="nav"><span class="brand">13 NAP A VADNYUGATON <span style="color:#b78858">/ VOL. 3</span></span><span class="pill">DALUNK · VÉGLEGES</span></div></header><main class="container"><div class="eyebrow">Our song · Az utazásunk dala</div><h1 class="main-title">Thirteen Days in the Wild West</h1><p class="subtitle">Három szív. Tizenhárom nap. Egy életre szóló emlék.</p><section class="hero"><img class="cover" src="dalunk-borito.png" alt="A dal saját borítóképe – 13 nap a vadnyugaton"><div class="player"><div><small>ORIGINAL ROAD TRIP SONG · 2025</small><h2>Thirteen Days in the Wild West</h2><div class="hint">Zsuzsi · Levi · Doki</div></div><div class="controls"><button class="ctrl" id="back" aria-label="10 másodperc vissza" title="10 mp vissza">↶</button><button class="ctrl play" id="play" aria-label="Lejátszás">▶</button><button class="ctrl" id="forward" aria-label="10 másodperc előre" title="10 mp előre">↷</button></div><div><input class="range" type="range" min="0" max="100" value="0" id="seek" aria-label="Lejátszási pozíció"><div class="time"><span id="current">0:00</span><span id="duration">–:––</span></div></div><div class="vol"><span>♪</span><input class="range" type="range" min="0" max="100" value="65" id="volume" aria-label="Hangerő"><button class="ctrl" id="mute" aria-label="Némítás" style="font-size:20px">🔊</button></div><div class="hint" style="text-align:center">A dal a lejátszás gombra kattintva indul.</div><div class="download-wrap"><a class="download-audio" href="thirteen-days-in-the-wild-west.mp3" download="Thirteen Days in the Wild West.mp3" type="audio/mpeg" aria-label="Thirteen Days in the Wild West – az MP3-dal letöltése">⬇ Zene letöltése · MP3</a><span class="download-hint">A teljes dal letölthető, és offline is meghallgatható.</span></div><audio id="audio" src="thirteen-days-in-the-wild-west.mp3" preload="metadata"></audio></div></section><section class="section video"><div class="yt"><iframe id="youtube" src="https://www.youtube-nocookie.com/embed/VAFh0B0KpWw?enablejsapi=1&rel=0" title="Thirteen Days in the Wild West – utazásunk filmje" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-note"><div class="eyebrow" style="text-align:left;margin:0">A film · The video</div><h3>Egy dal, egy utazás, rengeteg emlék</h3><p>Indítsd el a filmet, és éld át újra a 13 napos kalandot a fotókönyv képeivel és a saját dalunkkal.</p><p class="hint">A videó indításakor az MP3-lejátszó automatikusan megáll.</p><a class="linkbtn" href="https://youtu.be/VAFh0B0KpWw" target="_blank" rel="noopener">Megnyitás YouTube-on ↗</a></div></section><section class="karaoke" id="karaoke"><div class="karaoke-top"><div><span class="karaoke-headline">KARAOKE · KÉT NYELVEN</span><h2>Énekkel együtt, sorról sorra</h2><p class="karaoke-sub">Válaszd ki, hogy a magyar fordítás vagy az eredeti angol dalszöveg kövesse az éneket.</p></div><div class="karaoke-language"><span class="karaoke-status" id="karaokeStatus" aria-live="polite">Indítsd el a dalt!</span><div class="karaoke-switch" role="group" aria-label="Karaoke dalszöveg nyelve"><button type="button" id="karaokeHu" class="selected" aria-pressed="true">Magyar</button><button type="button" id="karaokeEn" aria-pressed="false">English</button></div></div></div><div class="karaoke-viewport" id="karaokeView"><div class="karaoke-stack" id="karaokeStack"></div></div><div class="karaoke-actions"><button type="button" id="karaokePlay" class="k-play">▶ Dal indítása</button><button type="button" id="syncMinus" aria-label="Karaoke egy másodperccel korábbra">−1 mp</button><span id="syncValue" class="sync-value">Eltolás: 0 mp</span><button type="button" id="syncPlus" aria-label="Karaoke egy másodperccel későbbre">+1 mp</button><button type="button" id="syncReset">Visszaállítás</button></div><p class="karaoke-notice">Végleges időzítés: a korábbi −9 mp-es eltolás és a 71 sor pontosítása beépítve. A két nyelv ugyanazzal az időzítéssel követi a dalt, tekeréskor is. A ±1 mp gombokkal finomhangolható.</p><details class="karaoke-calibrate" id="syncEditor"><summary><strong>🎯 Soronkénti időzítés pontosítása</strong> – csak ha valamelyik versszak elcsúszik</summary><p>Ha az ének egy új sorba kezd, kattints arra a sorra a fenti karaoke-ablakban. Ezután a <strong>„Most hangzik el”</strong> gomb rögzíti a pontos időt. A köztes sorokat a rendszer automatikusan hozzáigazítja. A beállítások ezen a gépen megmaradnak.</p><div class="adjust-row"><span id="calSelected" aria-live="polite">Nincs kiválasztott sor</span></div><div class="adjust-row"><button type="button" id="stampNow" class="save-sync" disabled>⏱ Most hangzik el</button><button type="button" id="clearStamp" disabled>Időbélyeg törlése</button><button type="button" id="clearAllStamps">Összes egyéni időzítés törlése</button><button type="button" id="exportSync" class="save-sync">⬇ Időzítés exportálása (JSON)</button></div><p id="calStatus" class="karaoke-info" role="status">A végleges, személyesen beállított időpontok már be vannak építve. A további finomítás csak helyben mentődik.</p></details></section><section class="section paper"><div class="lyric-head"><h2>Dalszöveg · Lyrics</h2><div class="toggle"><button id="both" class="active">Két nyelven</button><button id="english">English</button><button id="hungarian">Magyar</button></div></div><div class="columns" id="columns"><div id="en"><h3 class="langtitle">English · Original lyrics</h3><div class="lyrics">It was October when we hit the road,
+Chasing old dreams wherever they'd go.
+Los Angeles lights were shining so bright,
+Our Ford rolled on into the California night.
+
+A purple lightsaber lit up Disneyland,
+At Universal, we found a wonderland.
+Through Warner Bros. streets, where the movie stars shine,
+To Santa Monica, where the sun meets the tide.
+
+Thirteen days in the Wild West,
+Three hearts together, feeling blessed.
+Through desert roads and mountains high,
+Chasing our dreams beneath endless skies.
+
+And if someday these memories fade,
+Our hearts will hold the moments we made.
+'Cause it's not the miles or the roads we've been through,
+It's the time we shared, just us three, me and you.
+
+We left Barstow as the morning broke,
+Death Valley whispered where the desert spoke.
+In Baker, even aliens welcomed us in,
+Then Vegas lit the night with a thousand dreams.
+
+We laughed on Fremont beneath the neon glow,
+Walked the Strip where the restless rivers flow.
+But when the morning sun came shining through,
+We headed for the mountains under Utah blue.
+
+Zion's mighty cliffs rose into the sky,
+We walked those trails where the eagles fly.
+On Angels Landing, with the canyon below,
+We held on to courage and kept moving slow.
+
+Bryce Canyon's towers stood golden and tall,
+Like ancient castles watching over us all.
+At Horseshoe Bend, we watched the river wind,
+And wished we could leave the hands of time behind.
+
+Thirteen days in the Wild West,
+Three hearts together, feeling blessed.
+Through desert roads and mountains high,
+Chasing our dreams beneath endless skies.
+
+And if someday these memories fade,
+Our hearts will hold the moments we made.
+'Cause it's not the miles or the roads we've been through,
+It's the time we shared, just us three, me and you.
+
+Antelope Canyon, where the sunlight danced,
+Monument Valley, like a dream at a glance.
+On that Forrest Gump highway, the three of us stood,
+Holding one moment as long as we could.
+
+At the Grand Canyon's edge, we ran out of words,
+Two billion years of stories, waiting to be heard.
+Then Sedona's red rocks caught the last golden light,
+And slowly turned purple as day became night.
+
+Zsuzsi and Levi, and me by their side,
+A thousand small moments on one endless ride.
+Sometimes we just sat there, watching the view,
+No words were needed, we already knew.
+
+We couldn't hold time, couldn't make it stay,
+But we carried a little of each place away.
+
+Phoenix was waiting with the morning sun,
+One last cactus picture before we were done.
+Our plane took off and the mountains grew small,
+But we carried a piece of America through it all.
+
+And when we're back home, turning pages again,
+We'll hear those desert winds like we heard them back then.
+'Cause the road may end and the years may fly,
+But these thirteen days will never say goodbye.
+
+Final Chorus – Slowly, With Emotion
+Thirteen days in the Wild West,
+Three hearts together, feeling blessed.
+And wherever the road may lead us someday,
+Those beautiful miles will never fade away.
+
+'Cause it wasn't the distance or the places we'd seen,
+It was being together, living our dream.
+And when all the years have come and gone,
+The best roads are the ones we travel on together.
+
+Three hearts. Thirteen days. A lifetime of memories.</div></div><div id="hu"><h3 class="langtitle">Magyar · Fordítás</h3><div class="lyrics">Október volt, amikor útra keltünk,
+Régi álmokat kergettünk, bármerre is vezettek.
+Los Angeles fényei ragyogva égtek,
+Fordunk a kaliforniai éjszakába gördült.
+
+Lila fénykard ragyogott Disneylandben,
+A Universalban csodavilágra leltünk.
+A Warner Bros. utcáin, ahol filmsztárok ragyognak,
+Majd Santa Monicába, ahol a nap a tengerrel találkozik.
+
+Tizenhárom nap a vadnyugaton,
+Három szív együtt, hálával tele.
+Sivatagi utakon, magas hegyeken át,
+Álmainkat követve a végtelen ég alatt.
+
+És ha egyszer elhalványulnak ezek az emlékek,
+Szívünk megőrzi a közösen megélt pillanatokat.
+Mert nem a mérföldek vagy a bejárt utak számítanak,
+Hanem az együtt töltött idő: mi hárman, te meg én.
+
+Barstow-t magunk mögött hagytuk, amikor felvirradt,
+A Halál-völgy suttogott, és a sivatag mesélt.
+Bakerben még az idegenek is üdvözöltek,
+Aztán Vegas ezernyi álommal világította be az éjt.
+
+Nevettünk a Fremont Street neonfényei alatt,
+Végigsétáltunk a Strip nyüzsgő forgatagán.
+De amikor a reggeli nap újra felragyogott,
+Utah kék ege alatt a hegyek felé indultunk.
+
+Zion hatalmas sziklái az égig magasodtak,
+Ösvényeken jártunk, ahol sasok szállnak.
+Az Angels Landingen, alattunk a kanyonnal,
+Bátorságot gyűjtve haladtunk lassan tovább.
+
+Bryce Canyon sziklatornyai aranylón magasodtak,
+Ősi várakként őrködtek fölöttünk.
+A Horseshoe Bendnél néztük a kanyargó folyót,
+És azt kívántuk, bár megállíthatnánk az időt.
+
+Tizenhárom nap a vadnyugaton,
+Három szív együtt, hálával tele.
+Sivatagi utakon, magas hegyeken át,
+Álmainkat követve a végtelen ég alatt.
+
+És ha egyszer elhalványulnak ezek az emlékek,
+Szívünk megőrzi a közösen megélt pillanatokat.
+Mert nem a mérföldek vagy a bejárt utak számítanak,
+Hanem az együtt töltött idő: mi hárman, te meg én.
+
+Az Antelope Canyonban táncolt a napfény,
+Monument Valley álomnak tűnt első pillantásra.
+A Forrest Gump útján ott álltunk mindhárman,
+Próbáltunk egyetlen pillanatot minél tovább megőrizni.
+
+A Grand Canyon peremén szavunk is elakadt,
+Kétmilliárd év története várt arra, hogy meghalljuk.
+Aztán Sedona vörös sziklái elkapták az utolsó aranyfényt,
+És lassan lilába fordultak, ahogy a nappal éjszakává vált.
+
+Zsuzsi, Levi, és én ott mellettük,
+Ezer apró pillanat egyetlen végtelen utazáson.
+Néha csak ültünk, és néztük a tájat,
+Nem kellettek szavak: mindannyian tudtuk.
+
+Nem tarthattuk vissza az időt, nem állíthattuk meg,
+De minden helyből magunkkal vittünk egy kis darabot.
+
+Phoenix a reggeli napsütéssel várt ránk,
+Még egy utolsó kaktuszfotó az indulás előtt.
+A gépünk felszállt, a hegyek egyre kisebbek lettek,
+De magunkkal vittünk egy darabot Amerikából.
+
+És amikor otthon újra lapozgatjuk a könyvet,
+Ismét halljuk majd a sivatagi szelet.
+Mert az út véget érhet, és az évek elszállhatnak,
+De ez a tizenhárom nap sosem búcsúzik el.
+
+Utolsó refrén – lassan, érzelmesen
+Tizenhárom nap a vadnyugaton,
+Három szív együtt, hálával tele.
+És bárhová is vezet egyszer az utunk,
+Azok a gyönyörű mérföldek sosem halványulnak el.
+
+Mert nem a távolság vagy a látott helyek számítottak,
+Hanem hogy együtt lehettünk, és megélhettük az álmunkat.
+És amikor már évek sokasága telt el,
+A legszebb utak azok, amelyeket együtt járunk be.
+
+Három szív. Tizenhárom nap. Egy életre szóló emlék.</div></div></div><div class="endnote">Three hearts. Thirteen days. A lifetime of memories.</div></section><div class="foot">Különálló bemutatóoldal · A jelenlegi weboldal és GitHub változatlan</div></main><script>
+const a=document.getElementById('audio'), play=document.getElementById('play'), seek=document.getElementById('seek'), vol=document.getElementById('volume'), mute=document.getElementById('mute');a.volume=.65;const fmt=s=>Number.isFinite(s)?`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`:'–:––';function sync(){play.textContent=a.paused?'▶':'❚❚';play.setAttribute('aria-label',a.paused?'Lejátszás':'Szünet');document.getElementById('current').textContent=fmt(a.currentTime);document.getElementById('duration').textContent=fmt(a.duration);if(a.duration&&!seek.matches(':active'))seek.value=(a.currentTime/a.duration)*100;}['loadedmetadata','timeupdate','play','pause','ended'].forEach(e=>a.addEventListener(e,sync));play.onclick=()=>a.paused?a.play():a.pause();document.getElementById('back').onclick=()=>a.currentTime=Math.max(0,a.currentTime-10);document.getElementById('forward').onclick=()=>a.currentTime=Math.min(a.duration||0,a.currentTime+10);seek.oninput=()=>{if(a.duration)a.currentTime=(seek.value/100)*a.duration};vol.oninput=()=>{a.volume=vol.value/100;a.muted=false;mute.textContent=a.volume?'🔊':'🔇'};mute.onclick=()=>{a.muted=!a.muted;mute.textContent=a.muted?'🔇':'🔊'};const cols=document.getElementById('columns');['both','english','hungarian'].forEach(id=>document.getElementById(id).onclick=()=>{cols.className=id==='both'?'columns':'columns '+id;document.querySelectorAll('.toggle button').forEach(b=>b.classList.toggle('active',b.id===id));});const fr=document.getElementById('youtube');window.addEventListener('message',e=>{if(e.origin!=='https://www.youtube.com'&&e.origin!=='https://www.youtube-nocookie.com')return;try{let m=JSON.parse(e.data);if(m.event==='onStateChange'&&m.info===1)a.pause();}catch(err){}});fr.addEventListener('load',()=>{try{fr.contentWindow.postMessage(JSON.stringify({event:'listening',id:fr.id,channel:'widget'}),'*')}catch(e){}});sync();
+</script><script>
+const karaokeCues=[{"time":14.1,"text":"Október volt, amikor útra keltünk,","en":"It was October when we hit the road,"},{"time":17.9,"text":"Régi álmokat kergettünk, bármerre is vezettek.","en":"Chasing old dreams wherever they'd go."},{"time":21.5,"text":"Los Angeles fényei ragyogva égtek,","en":"Los Angeles lights were shining so bright,"},{"time":26,"text":"Fordunk a kaliforniai éjszakába gördült.","en":"Our Ford rolled on into the California night."},{"time":28.7,"text":"Lila fénykard ragyogott Disneylandben,","en":"A purple lightsaber lit up Disneyland,"},{"time":33.1,"text":"A Universalban csodavilágra leltünk.","en":"At Universal, we found a wonderland."},{"time":37.49,"text":"A Warner Bros. utcáin, ahol filmsztárok ragyognak,","en":"Through Warner Bros. streets, where the movie stars shine,"},{"time":42.83,"text":"Majd Santa Monicába, ahol a nap a tengerrel találkozik.","en":"To Santa Monica, where the sun meets the tide."},{"time":48.8,"text":"Tizenhárom nap a vadnyugaton,","en":"Thirteen days in the Wild West,"},{"time":52.3,"text":"Három szív együtt, hálával tele.","en":"Three hearts together, feeling blessed."},{"time":55.85,"text":"Sivatagi utakon, magas hegyeken át,","en":"Through desert roads and mountains high,"},{"time":59.4,"text":"Álmainkat követve a végtelen ég alatt.","en":"Chasing our dreams beneath endless skies."},{"time":63.06,"text":"És ha egyszer elhalványulnak ezek az emlékek,","en":"And if someday these memories fade,"},{"time":66.7,"text":"Szívünk megőrzi a közösen megélt pillanatokat.","en":"Our hearts will hold the moments we made."},{"time":69.99,"text":"Mert nem a mérföldek vagy a bejárt utak számítanak,","en":"'Cause it's not the miles or the roads we've been through,"},{"time":73.9,"text":"Hanem az együtt töltött idő: mi hárman, te meg én.","en":"It's the time we shared, just us three, me and you."},{"time":85.5,"text":"Barstow-t magunk mögött hagytuk, amikor felvirradt,","en":"We left Barstow as the morning broke,"},{"time":88.4,"text":"A Halál-völgy suttogott, és a sivatag mesélt.","en":"Death Valley whispered where the desert spoke."},{"time":92.27,"text":"Bakerben még az idegenek is üdvözöltek,","en":"In Baker, even aliens welcomed us in,"},{"time":95.9,"text":"Aztán Vegas ezernyi álommal világította be az éjt.","en":"Then Vegas lit the night with a thousand dreams."},{"time":99,"text":"Nevettünk a Fremont Street neonfényei alatt,","en":"We laughed on Fremont beneath the neon glow,"},{"time":102.6,"text":"Végigsétáltunk a Strip nyüzsgő forgatagán.","en":"Walked the Strip where the restless rivers flow."},{"time":106.6,"text":"De amikor a reggeli nap újra felragyogott,","en":"But when the morning sun came shining through,"},{"time":110.25,"text":"Utah kék ege alatt a hegyek felé indultunk.","en":"We headed for the mountains under Utah blue."},{"time":114.11,"text":"Zion hatalmas sziklái az égig magasodtak,","en":"Zion's mighty cliffs rose into the sky,"},{"time":117.57,"text":"Ösvényeken jártunk, ahol sasok szállnak.","en":"We walked those trails where the eagles fly."},{"time":120.8,"text":"Az Angels Landingen, alattunk a kanyonnal,","en":"On Angels Landing, with the canyon below,"},{"time":125.04,"text":"Bátorságot gyűjtve haladtunk lassan tovább.","en":"We held on to courage and kept moving slow."},{"time":129,"text":"Bryce Canyon sziklatornyai aranylón magasodtak,","en":"Bryce Canyon's towers stood golden and tall,"},{"time":132.78,"text":"Ősi várakként őrködtek fölöttünk.","en":"Like ancient castles watching over us all."},{"time":136.3,"text":"A Horseshoe Bendnél néztük a kanyargó folyót,","en":"At Horseshoe Bend, we watched the river wind,"},{"time":140.85,"text":"És azt kívántuk, bár megállíthatnánk az időt.","en":"And wished we could leave the hands of time behind."},{"time":145.4,"text":"Tizenhárom nap a vadnyugaton,","en":"Thirteen days in the Wild West,"},{"time":148.4,"text":"Három szív együtt, hálával tele.","en":"Three hearts together, feeling blessed."},{"time":151.9,"text":"Sivatagi utakon, magas hegyeken át,","en":"Through desert roads and mountains high,"},{"time":155.4,"text":"Álmainkat követve a végtelen ég alatt.","en":"Chasing our dreams beneath endless skies."},{"time":159.26,"text":"És ha egyszer elhalványulnak ezek az emlékek,","en":"And if someday these memories fade,"},{"time":162.89,"text":"Szívünk megőrzi a közösen megélt pillanatokat.","en":"Our hearts will hold the moments we made."},{"time":166.3,"text":"Mert nem a mérföldek vagy a bejárt utak számítanak,","en":"'Cause it's not the miles or the roads we've been through,"},{"time":172,"text":"Hanem az együtt töltött idő: mi hárman, te meg én.","en":"It's the time we shared, just us three, me and you."},{"time":178,"text":"Az Antelope Canyonban táncolt a napfény,","en":"Antelope Canyon, where the sunlight danced,"},{"time":181,"text":"Monument Valley álomnak tűnt első pillantásra.","en":"Monument Valley, like a dream at a glance."},{"time":185,"text":"A Forrest Gump útján ott álltunk mindhárman,","en":"On that Forrest Gump highway, the three of us stood,"},{"time":189,"text":"Próbáltunk egyetlen pillanatot minél tovább megőrizni.","en":"Holding one moment as long as we could."},{"time":192,"text":"A Grand Canyon peremén szavunk is elakadt,","en":"At the Grand Canyon's edge, we ran out of words,"},{"time":195.4,"text":"Kétmilliárd év története várt arra, hogy meghalljuk.","en":"Two billion years of stories, waiting to be heard."},{"time":199,"text":"Aztán Sedona vörös sziklái elkapták az utolsó aranyfényt,","en":"Then Sedona's red rocks caught the last golden light,"},{"time":202.69,"text":"És lassan lilába fordultak, ahogy a nappal éjszakává vált.","en":"And slowly turned purple as day became night."},{"time":206.6,"text":"Zsuzsi, Levi, és én ott mellettük,","en":"Zsuzsi and Levi, and me by their side,"},{"time":210.63,"text":"Ezer apró pillanat egyetlen végtelen utazáson.","en":"A thousand small moments on one endless ride."},{"time":214.65,"text":"Néha csak ültünk, és néztük a tájat,","en":"Sometimes we just sat there, watching the view,"},{"time":218.93,"text":"Nem kellettek szavak: mindannyian tudtuk.","en":"No words were needed, we already knew."},{"time":222.7,"text":"Nem tarthattuk vissza az időt, nem állíthattuk meg,","en":"We couldn't hold time, couldn't make it stay,"},{"time":229.4,"text":"De minden helyből magunkkal vittünk egy kis darabot.","en":"But we carried a little of each place away."},{"time":236.1,"text":"Phoenix a reggeli napsütéssel várt ránk,","en":"Phoenix was waiting with the morning sun,"},{"time":239.1,"text":"Még egy utolsó kaktuszfotó az indulás előtt.","en":"One last cactus picture before we were done."},{"time":242.7,"text":"A gépünk felszállt, a hegyek egyre kisebbek lettek,","en":"Our plane took off and the mountains grew small,"},{"time":246.2,"text":"De magunkkal vittünk egy darabot Amerikából.","en":"But we carried a piece of America through it all."},{"time":249.72,"text":"És amikor otthon újra lapozgatjuk a könyvet,","en":"And when we're back home, turning pages again,"},{"time":253.5,"text":"Ismét halljuk majd a sivatagi szelet.","en":"We'll hear those desert winds like we heard them back then."},{"time":258.37,"text":"Mert az út véget érhet, és az évek elszállhatnak,","en":"'Cause the road may end and the years may fly,"},{"time":264.13,"text":"De ez a tizenhárom nap sosem búcsúzik el.","en":"But these thirteen days will never say goodbye."},{"time":269.6,"text":"Tizenhárom nap a vadnyugaton,","en":"Thirteen days in the Wild West,"},{"time":272.3,"text":"Három szív együtt, hálával tele.","en":"Three hearts together, feeling blessed."},{"time":275.6,"text":"És bárhová is vezet egyszer az utunk,","en":"And wherever the road may lead us someday,"},{"time":281.78,"text":"Azok a gyönyörű mérföldek sosem halványulnak el.","en":"Those beautiful miles will never fade away."},{"time":287.97,"text":"Mert nem a távolság vagy a látott helyek számítottak,","en":"'Cause it wasn't the distance or the places we'd seen,"},{"time":293.15,"text":"Hanem hogy együtt lehettünk, és megélhettük az álmunkat.","en":"It was being together, living our dream."},{"time":298.06,"text":"És amikor már évek sokasága telt el,","en":"And when all the years have come and gone,"},{"time":302.69,"text":"A legszebb utak azok, amelyeket együtt járunk be.","en":"The best roads are the ones we travel on together."},{"time":307.6,"text":"Három szív. Tizenhárom nap. Egy életre szóló emlék.","en":"Three hearts. Thirteen days. A lifetime of memories."}]; const ks=document.getElementById('karaokeStack'),kv=document.getElementById('karaokeView');
+let lyricOffset=0, karaokeLang='hu', activeCue=-2, selectedCue=-1, followKaraoke=true;
+const savedKey='wildwest13_karaoke_anchor_published_v3';
+let customAnchors={};
+try{const prev=JSON.parse(localStorage.getItem(savedKey)||'{}');if(prev&&typeof prev==='object')customAnchors=prev;}catch(e){}
+function storeAnchors(){try{localStorage.setItem(savedKey,JSON.stringify(customAnchors));}catch(e){}}
+function formatOffset(n){return 'Eltolás: '+(n>0?'+':'')+n+' mp'}
+// A dal néhány különböző tempójú részén független szinkronpontot használunk.
+// Egyedi pontnál a pontosított érték nem tolja el a teljes dalt.
+function cueStart(i){
+  const baseline=karaokeCues[i].time+lyricOffset;
+  const anchors=Object.keys(customAnchors).map(k=>Number(k)).filter(k=>Number.isInteger(k)&&k>=0&&k<karaokeCues.length&&Number.isFinite(Number(customAnchors[k]))).sort((a,b)=>a-b);
+  if(!anchors.length)return baseline;
+  const nearestLeft=anchors.filter(k=>k<=i).pop();
+  const nearestRight=anchors.find(k=>k>=i);
+  const baseAt=k=>karaokeCues[k].time+lyricOffset;
+  const deviation=k=>Number(customAnchors[k])-baseAt(k);
+  let adjustment=0;
+  if(nearestLeft!==undefined&&nearestRight!==undefined&&nearestLeft!==nearestRight){
+    const p=(karaokeCues[i].time-karaokeCues[nearestLeft].time)/(karaokeCues[nearestRight].time-karaokeCues[nearestLeft].time);
+    adjustment=deviation(nearestLeft)*(1-p)+deviation(nearestRight)*p;
+  }else if(nearestLeft!==undefined)adjustment=deviation(nearestLeft);
+  else if(nearestRight!==undefined)adjustment=deviation(nearestRight);
+  return baseline+adjustment;
+}
+const cueButtons=karaokeCues.map((cue,i)=>{
+ const b=document.createElement('button');b.type='button';b.className='karaoke-line';
+ b.textContent=cue.text;
+ b.title='Kattints a sor kiválasztásához; dupla kattintásra ide ugrik a dal.';
+ b.onclick=()=>{selectedCue=i;document.querySelectorAll('.karaoke-line').forEach((el,j)=>el.classList.toggle('manual-selected',j===i));document.getElementById('calSelected').textContent=(i+1)+'. sor · '+fmt(cueStart(i));document.getElementById('stampNow').disabled=false;document.getElementById('clearStamp').disabled=false;document.getElementById('syncEditor').open=true;};
+ b.ondblclick=()=>{a.currentTime=Math.max(0,cueStart(i));syncKaraoke(true)};
+ ks.appendChild(b);return b;
+});
+let scrollRaf=0;
+function syncKaraoke(force=false){
+ const t=a.currentTime;
+ let i=-1;
+ for(let j=0;j<karaokeCues.length;j++){if(t>=cueStart(j))i=j;else break;}
+ if(i!==activeCue||force){
+  activeCue=i;
+  cueButtons.forEach((b,j)=>{b.classList.toggle('active',j===i);b.classList.toggle('near',Math.abs(i-j)<=3&&j!==i)});
+  if(i>=0){
+   document.getElementById('karaokeStatus').textContent=(i+1)+' / '+karaokeCues.length+' sor';
+   const b=cueButtons[i];
+   const target=b.offsetTop-(kv.clientHeight-b.offsetHeight)*0.48;
+   if(scrollRaf)cancelAnimationFrame(scrollRaf);
+   scrollRaf=requestAnimationFrame(()=>{kv.scrollTo({top:Math.max(0,target),behavior:force?'instant':'smooth'});scrollRaf=0});
+  }else document.getElementById('karaokeStatus').textContent='Hamarosan kezdődik…';
+ }
+ document.getElementById('karaokePlay').textContent=a.paused?'▶ Dal indítása':'❚❚ Szünet';
+}
+['timeupdate','seeked','play','pause','loadedmetadata','ended'].forEach(ev=>a.addEventListener(ev,()=>syncKaraoke(false)));
+document.getElementById('karaokePlay').onclick=()=>{if(a.paused)a.play();else a.pause()};
+function changeOffset(d){lyricOffset=Math.max(-30,Math.min(30,lyricOffset+d));document.getElementById('syncValue').textContent=formatOffset(lyricOffset);syncKaraoke(true)}
+document.getElementById('syncMinus').onclick=()=>changeOffset(-1);
+document.getElementById('syncPlus').onclick=()=>changeOffset(1);
+document.getElementById('syncReset').onclick=()=>changeOffset(-lyricOffset);
+function setKaraokeLanguage(lang){
+ karaokeLang=lang;
+ cueButtons.forEach((b,i)=>{b.textContent=lang==='hu'?karaokeCues[i].text:karaokeCues[i].en;});
+ document.getElementById('karaokeHu').classList.toggle('selected',lang==='hu');
+ document.getElementById('karaokeEn').classList.toggle('selected',lang==='en');
+ document.getElementById('karaokeHu').setAttribute('aria-pressed',String(lang==='hu'));
+ document.getElementById('karaokeEn').setAttribute('aria-pressed',String(lang==='en'));
+ syncKaraoke(true);
+}
+document.getElementById('karaokeHu').onclick=()=>setKaraokeLanguage('hu');
+document.getElementById('karaokeEn').onclick=()=>setKaraokeLanguage('en');
+function updateSyncStatus(message){document.getElementById('calStatus').textContent=message}
+document.getElementById('stampNow').onclick=()=>{
+ if(selectedCue<0)return;
+ customAnchors[selectedCue]=Math.round(a.currentTime*10)/10;
+ storeAnchors();syncKaraoke(true);
+ updateSyncStatus('Elmentve: '+(selectedCue+1)+'. sor – '+fmt(a.currentTime)+'. A többi sor hozzáigazítva.');
+};
+document.getElementById('clearStamp').onclick=()=>{
+ if(selectedCue<0)return;delete customAnchors[selectedCue];storeAnchors();syncKaraoke(true);updateSyncStatus('A kiválasztott sor egyéni időzítését töröltem.');
+};
+document.getElementById('clearAllStamps').onclick=()=>{
+ customAnchors={};storeAnchors();syncKaraoke(true);updateSyncStatus('Visszaállítva az alap időzítés.');
+};
+document.getElementById('exportSync').onclick=()=>{
+ const points=karaokeCues.map((cue,i)=>({
+  line:i+1,
+  startSeconds:Math.round(cueStart(i)*100)/100,
+  hu:cue.text,
+  en:cue.en
+ }));
+ const payload={
+  project:'Thirteen Days in the Wild West',
+  format:'wildwest13-karaoke-v1',
+  lyricOffsetSeconds:lyricOffset,
+  customAnchors:customAnchors,
+  lines:points
+ };
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json;charset=utf-8'});
+ const url=URL.createObjectURL(blob);
+ const link=document.createElement('a');
+ link.href=url;
+ link.download='vadnyugat_karaoke_vegleges_idozites.json';
+ document.body.appendChild(link);
+ link.click();
+ link.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+ updateSyncStatus('Az aktuális időzítést letöltötted. A végleges alapidőzítés már be van építve.');
+};
+syncKaraoke(true);
+</script>
+<script>
+(function(){
+ if(window.self===window.top)return;
+ document.documentElement.classList.add('embedded');
+ function reportHeight(){
+   let h=Math.ceil(Math.max(document.documentElement.scrollHeight,document.body.scrollHeight));
+   if(h>600&&h<15000)window.parent.postMessage({wildwestSongHeight:h},'*');
+ }
+ window.addEventListener('load',reportHeight);
+ window.addEventListener('resize',reportHeight);
+ if(typeof ResizeObserver!=='undefined')new ResizeObserver(reportHeight).observe(document.body);
+ document.addEventListener('click',()=>setTimeout(reportHeight,80));
+ setTimeout(reportHeight,200);
+})();
+</script>
+</body></html>
