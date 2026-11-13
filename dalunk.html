@@ -332,14 +332,15 @@ syncKaraoke(true);
  if(window.self===window.top)return;
  document.documentElement.classList.add('embedded');
  function reportHeight(){
-   let h=Math.ceil(Math.max(document.documentElement.scrollHeight,document.body.scrollHeight));
-   if(h>600&&h<15000)window.parent.postMessage({wildwestSongHeight:h},'*');
+   const main=document.querySelector('main.container');    const h=Math.ceil(main ? main.getBoundingClientRect().bottom+window.scrollY+8 : document.body.scrollHeight);    if(h>450&&h<15000)window.parent.postMessage({wildwestSongHeight:h},'*');
  }
  window.addEventListener('load',reportHeight);
  window.addEventListener('resize',reportHeight);
  if(typeof ResizeObserver!=='undefined')new ResizeObserver(reportHeight).observe(document.body);
  document.addEventListener('click',()=>setTimeout(reportHeight,80));
  setTimeout(reportHeight,200);
+ setTimeout(reportHeight,1000);
+ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(reportHeight).catch(()=>{});
 })();
 </script>
 </body></html>

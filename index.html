@@ -73,8 +73,8 @@
 .song-tile strong{display:block;color:#ffe4ac;font-size:23px}
 .song-tile small{color:#e8cba4}
 #song{background:#211913}
-#song .song-host{width:100%;margin:0 auto;max-width:1280px;min-height:1100px}
-#songFrame{width:100%;min-height:1100px;height:3300px;border:0;display:block;background:#211913}
+#song .song-host{width:100%;margin:0 auto;max-width:1280px;min-height:0}
+#songFrame{width:100%;min-height:0;height:900px;border:0;display:block;background:#211913}
 button:disabled{opacity:.55;cursor:not-allowed}
 @media(max-width:800px){.song-tile strong{font-size:19px}}
 
@@ -275,7 +275,12 @@ function buildGameMap(){
   svg.appendChild(svgGameEl('image',{href:data.image,x:0,y:0,width:1448,height:1086,class:'map-bg'}));
   // Pontosan 4, illetve 12 vonalszakasz. Nincsenek egyéb összeköttetések.
   data.paths.forEach((path,i)=>svg.appendChild(svgGameEl('path',{d:path,class:'route-leg','data-from':i+1,'data-to':i+2})));
-  // Nincs külön SVG-számozás vagy számozott kör a szaggatott útvonalon.
+  // Csak egyetlen számozás: egyetlen SVG-jelölő minden állomáshoz.
+  data.stops.forEach((p,i)=>{
+    const pin=svgGameEl('g',{'data-stop':i+1});
+    pin.appendChild(svgGameEl('circle',{cx:p.x,cy:p.y,r:24,class:'stop-pin'+(i===here.position?' stop-active':'')}));
+    const num=svgGameEl('text',{x:p.x,y:p.y+1,class:'stop-number'});num.textContent=i+1;pin.appendChild(num);svg.appendChild(pin);
+  });
   const group=svgGameEl('g',{id:'gameFord',class:'ford-marker'});
   const im=svgGameEl('image',{href:'feher-ford-edge.png',x:-73,y:-141,width:146,height:121,preserveAspectRatio:'xMidYMid meet'});
   group.appendChild(im);svg.appendChild(group);
